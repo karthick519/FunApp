@@ -1,9 +1,0 @@
-$adminUN="arivozhimanoharangmail.onmicrosoft.com"
-
-$userCredential = Get-Credential -UserName $adminUN -Message "Type the password."
-
-connect-msolservice -Credential $userCredential
-
-connect-azaccount
-
-az login --tenant '279c67dd-a73b-41c9-b369-6edd395210c7'
